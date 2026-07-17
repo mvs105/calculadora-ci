@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/Checkout@v4
+        uses: actions/checkout@v4
       - name: Configurar o Java
         uses: actions/setup-java@v4
         with:
-          distribuition: 'temurin'
+          distribution: 'temurin'
           java-version: '25'
       - name: Executar os testes
         run: mvn test
